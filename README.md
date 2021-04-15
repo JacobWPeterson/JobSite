@@ -44,7 +44,8 @@ A website allowing job seekers to create a profile, browse job listings, apply f
 1. React
 2. Node/Express
 3. Axios
-4. Mongoose
 5. Styled-Components
 6. Jest
 7. Enzyme
+8. Mongoose
+9. JSON Web Tokens
