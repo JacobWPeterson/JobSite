@@ -59,4 +59,4 @@ This repo contains the front-end code for JobSite. You can find the remaining co
 ## Screengrabs
 
 ### Home/Login Page
-<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/Login.png" width="750px"  alt="User login landing page" />
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/Home.png" width="750px"  alt="User login landing page" />
