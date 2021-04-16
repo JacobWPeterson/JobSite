@@ -11,8 +11,6 @@ const NavBarWrapper = styled.div`
   background: #fff;
   margin: -8px 0 0 0;
   border-bottom: 1px solid #e0e0e0;
-  color: ${schema.tertiary};
-  font-family: Arial, sans-serif;
 
   @media (min-width: 768px) {
     justify-content: left;
@@ -32,6 +30,7 @@ const Logo = styled.h1`
 
 const Slogan = styled.p`
   display: none;
+  color: ${schema.text};
   @media (min-width: 900px) {
     display: inline;
     font-size: 1rem;

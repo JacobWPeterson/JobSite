@@ -1,22 +1,20 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-const primary = '#58B05D';
-const secondary = '#00AAAA';
-const tertiary = '#050802';
+const primary = '#ACBDBA';
+const secondary = '#A599B5';
+const tertiary = '#CDDDDD';
+const text = '#051014';
 
 const title = 'JobSite';
 const slogan = 'Connecting people with jobs and jobs with people';
 const url = 'http://localhost:4000/api';
-// const url = 'http://18.220.13.101/api';
-// deprecated const url = 'http://3.134.101.103:4000/api';
 
 const GlobalStyle = createGlobalStyle`
   body {
     scroll-behavior: smooth;
-    font-family: Arial;
+    font-family: 'Ubuntu', sans-serif;
     ::-webkit-scrollbar { display: none }
     margin-left: 0px;
-    overflow-y: hidden;
   }
 `;
 
