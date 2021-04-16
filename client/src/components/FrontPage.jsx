@@ -11,7 +11,6 @@ const FlexDiv = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   overflow-x: hidden;
-  color: ${schema.text};
   background: whitesmoke;
 
   @media (min-width: 768px) {
@@ -55,6 +54,48 @@ const SmallCircle = styled.div`
   font-size: 1.8rem;
   font-weight: bold;
   text-align-last: right;
+`;
+
+const CircleHolder = styled.div`
+  position: absolute;
+  left: 445px;
+  top: 675px;
+  margin: 0;
+  width: 459px;
+  height: 175px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+`;
+
+const ThirdCircle = styled.div`
+  position: relative;
+  background: #ffffff30;
+  margin: 0;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+`;
+
+const Corner = styled.div`
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    top: 60vh;
+    right: 0;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    box-shadow: 20vh 10vw 0 0 ${schema.primary};
 `;
 
 const Form = styled.form`
@@ -236,13 +277,17 @@ const FrontPage = ({
   return (
     <FlexDiv>
       <ToggleButtonDiv>
-        <Toggle onClick={handleUserToggle}>{`${user === 'Seeker' ? 'Employer' : 'Seeker'} Portal`}</Toggle>
+        <Toggle onClick={handleUserToggle}>{`${user === 'Seeker' ? 'EMPLOYER' : 'SEEKER'} PORTAL`}</Toggle>
       </ToggleButtonDiv>
       <Circle>{`${schema.title}`}</Circle>
       <SmallCircle>
         Connecting People to Jobs
         And Jobs to People
       </SmallCircle>
+      <CircleHolder>
+        <ThirdCircle />
+      </CircleHolder>
+      <Corner />
       <Form>
         <h2>{`${user} Sign In`}</h2>
         {

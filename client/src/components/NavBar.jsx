@@ -30,7 +30,6 @@ const Logo = styled.h1`
 
 const Slogan = styled.p`
   display: none;
-  color: ${schema.text};
   @media (min-width: 900px) {
     display: inline;
     font-size: 1rem;

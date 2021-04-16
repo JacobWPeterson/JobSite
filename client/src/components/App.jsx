@@ -3,7 +3,6 @@ import {
   HashRouter,
   Switch,
   Route,
-  // Link,
 } from 'react-router-dom';
 
 import NavBar from './NavBar.jsx';

@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 const primary = '#ACBDBA';
 const secondary = '#A599B5';
 const tertiary = '#CDDDDD';
-const text = '#051014';
 
 const title = 'JobSite';
 const slogan = 'Connecting people with jobs and jobs with people';
@@ -15,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Ubuntu', sans-serif;
     ::-webkit-scrollbar { display: none }
     margin-left: 0px;
+    color: '#051014';
   }
 `;
 
