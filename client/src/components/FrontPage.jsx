@@ -11,7 +11,11 @@ const FlexDiv = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   overflow-x: hidden;
-  background: whitesmoke;
+  background: ${schema.primary};
+
+  @media (min-width: 575px) {
+    background: whitesmoke;
+  }
 
   @media (min-width: 768px) {
     justify-content: flex-end;
@@ -19,54 +23,91 @@ const FlexDiv = styled.div`
 `;
 
 const Circle = styled.div`
-  position: absolute;
-  left: 150px;
-  top: 150px;
-  background: ${schema.primary};
-  margin: 0;
-  width: 525px;
-  height: 550px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding: 0 0 0 1.5vw;
-  color: white;
-  font-size: 6rem;
-  font-weight: bold;
+  display: none;
+
+  @media (min-width: 575px) {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: ${schema.primary};
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 0 0 1.5vw;
+    color:${schema.primary};
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  @media (min-width: 1120px) {
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 150px;
+    transform: none;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    transform: none;
+  }
 `;
 
 const SmallCircle = styled.div`
-  position: absolute;
-  left: 450px;
-  top: 400px;
-  background: ${schema.secondary};
-  margin: 0;
-  width: 400px;
-  height: 450px;
-  border-radius: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1.5vw;
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align-last: right;
+  display: none;
+
+  @media (min-width: 1325px) {
+    position: absolute;
+    left: 345px;
+    top: 400px;
+    background: ${schema.secondary};
+    margin: 0;
+    width: 400px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5vw;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align-last: right;
+  }
+
+  @media (min-width: 1440px) {
+    left: 450px;
+    top: 400px;
+  }
 `;
 
 const CircleHolder = styled.div`
-  position: absolute;
-  left: 445px;
-  top: 675px;
-  margin: 0;
-  width: 459px;
-  height: 175px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: none;
+
+  @media (min-width: 1325px) {
+    position: absolute;
+    left: 340px;
+    top: 675px;
+    margin: 0;
+    width: 459px;
+    height: 175px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  @media (min-width: 1440px) {
+    left: 445px;
+    top: 675px;
+  }
 `;
 
 const ThirdCircle = styled.div`
@@ -79,6 +120,10 @@ const ThirdCircle = styled.div`
 `;
 
 const Corner = styled.div`
+  display: none;
+
+  @media (min-width: 1120px) {
+    display: inline;
     width: 20vw;
     height: 40vh;
     overflow: hidden;
@@ -86,24 +131,31 @@ const Corner = styled.div`
     top: 60vh;
     right: 0;
 
-  &:before {
-    content: "";
-    display: block;
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    border-radius: 50%;
-    bottom: 0;
-    right: 0;
-    box-shadow: 20vh 10vw 0 0 ${schema.primary};
+    &:before {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      border-radius: 50%;
+      bottom: 0;
+      right: 0;
+      box-shadow: 20vh 10vw 0 0 ${schema.secondary};
+    }
+  }
+
+  @media (min-width: 1325px) {
+    &:before {
+      box-shadow: 20vh 10vw 0 0 ${schema.primary};
+    }
+  }
 `;
 
 const Form = styled.form`
   min-height: 45vh;
-  min-width: 256px;
-  max-width: 320px;
+  width: min(320px, 90vw);
   margin: auto;
-  padding: 36px;
+  padding: 5vh 5vw;
   border-radius: 5px;
   position: relative;
   text-align: center;
@@ -111,10 +163,21 @@ const Form = styled.form`
   background: rgba(255,255,255,0.95);
   box-shadow: 4px 12px 16px #6d6d6d;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1120px) {
+    min-height: 45vh;
+    min-width: 256px;
+    max-width: 320px;
+    padding: 36px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 4px 12px 16px #6d6d6d;
     margin: auto 10vw auto 0;
   }
 `;
+
 const Input = styled.input`
   height: 36px;
   width: 90%;
@@ -122,10 +185,12 @@ const Input = styled.input`
   border-radius: 5px;
   background: whitesmoke;
 `;
+
 const Label = styled.label`
   float: left;
   margin: 18px 25px 4px 25px;
 `;
+
 const Button = styled.button`
   height: 40px;
   width: 55%;
@@ -137,6 +202,7 @@ const Button = styled.button`
   font-size: 1.1rem;
   ${schema.hoverEffect}
 `;
+
 const BottomDiv = styled.div`
   position: absolute;
   bottom: 0;
@@ -144,9 +210,10 @@ const BottomDiv = styled.div`
   margin: auto auto 32px auto;
   text-align: center;
 `;
+
 const ToggleButtonDiv = styled.div`
   height: 6vh;
-  width: 10vw;
+  width: auto;
   position: absolute;
   top: 0;
   right: 8vw;
@@ -155,6 +222,7 @@ const ToggleButtonDiv = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
 const Toggle = schema.searchButton;
 
 const SEEKER_REGISTER_HEADER = 'Looking for a job? Sign up now!';
