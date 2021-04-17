@@ -20,7 +20,6 @@ const Header = styled.div`
   width: 100%;
   height: 5%;
   text-align: center;
-  font-family: Arial, sans-serif;
   font-size: 1rem;
   line-height: 2.5rem;
 `;

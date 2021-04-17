@@ -7,7 +7,6 @@ import Account from './SeekerProfileSubComponents/Account.jsx';
 const SeekerPortalWrapper = styled.div`
   margin: 0;
   width: 100vw;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +88,6 @@ class SeekerPortal extends React.Component {
     const {
       seekerId, reminders, savedJobs, appliedJobs, notes, resume,
     } = this.state;
-    // console.log(resume);
     return (
       <SeekerPortalWrapper>
         <NavButtonDiv>

@@ -14,7 +14,6 @@ const Header = styled.div`
   width: 100%;
   min-height: 5%;
   text-align: center;
-  font-family: Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   line-height: 2.5rem;

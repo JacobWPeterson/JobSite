@@ -57,7 +57,6 @@ const Section = styled.div`
   margin-top: .5vh;
   display: flex;
   flex-direction: column;
-  // justify-content: space-evenly;
 `;
 
 const SectionTitle = styled.h2`

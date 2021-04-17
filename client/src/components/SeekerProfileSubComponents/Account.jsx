@@ -6,7 +6,7 @@ import Tabs from './Tabs.jsx';
 
 const AccountWrapper = styled.div`
   width: 95%;
-  height: auto;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;

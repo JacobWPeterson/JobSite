@@ -21,6 +21,7 @@ const SpacedRowDiv = styled.div`
 
 const Text = styled.p`
   margin: 0;
+  font-weight: 100;
 `;
 
 const ItalicText = styled.p`

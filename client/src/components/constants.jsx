@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     ::-webkit-scrollbar { display: none }
     margin-left: 0px;
     color: '#051014';
@@ -137,7 +138,6 @@ const listCard = styled.div`
   border-radius: 5px;
   margin: .25vh 0;
   padding: .5vh 1%;
-  font-family: Arial, sans-serif;
   color: #424242;
   transition-duration: 0.2s;
   &:hover {
