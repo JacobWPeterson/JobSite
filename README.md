@@ -65,6 +65,10 @@ The user has the option to sign in as a job seeker or, using the toggle at the t
 ### Job Seeker Dashboard
 The job seeker dashboard contains a non-detailed view of their resume, with the option to update their resume. To the right is a tab system that allows the to create reminders about upcoming jobs, review jobs they have saved from the job board, apply to those jobs, and create notes.
 
-On a large display:\
-<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSeekerDashboard.png" width="750px"  alt="User login landing page" />
+##### On a large display
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSeekerDashboard.png" width="750px"  alt="Job seeker dashboard on desktop" />
+
+##### On a mobile device
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSeekerDashboardMobile.png" width="200px"  alt="Job seeker dashboard on mobile" />
+
 
