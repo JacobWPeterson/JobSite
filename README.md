@@ -59,4 +59,12 @@ This repo contains the front-end code for JobSite. You can find the remaining co
 ## Screengrabs
 
 ### Home/Login Page
+The user has the option to sign in as a job seeker or, using the toggle at the top right, an employer. If they do not have an account, they have the option to create one with 'Register'
 <img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/Home.png" width="750px"  alt="User login landing page" />
+
+### Job Seeker Dashboard
+The job seeker dashboard contains a non-detailed view of their resume, with the option to update their resume. To the right is a tab system that allows the to create reminders about upcoming jobs, review jobs they have saved from the job board, apply to those jobs, and create notes.
+
+On a large display:
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSeekerDashboard.png" width="750px"  alt="User login landing page" />
+
