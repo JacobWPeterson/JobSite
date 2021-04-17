@@ -137,7 +137,7 @@ const listCard = styled.div`
   border: solid 1px #e0e0e0;
   border-radius: 5px;
   margin: .25vh 0;
-  padding: .5vh 1%;
+  padding: .5vh 1% 1vh 1%;
   color: #424242;
   transition-duration: 0.2s;
   &:hover {

@@ -14,21 +14,22 @@ const SpacedRowDiv = styled.div`
 `;
 
 const Title = styled.h1`
-  margin: 0.5vh 1vw;
+  margin: 0.25vh 1vw 0 1vw;
   color: ${schema.primary};
   font-size: 1rem;
-  font-weight: bold;
+  line-height: 1rem;
+  font-weight: 500;
 `;
 
 const Company = styled.p`
-  margin: 0.25vh 1vw 0 2vw;
-  font-weight: lighter;
+  margin: 0.25vh 1vw 0 1vw;
   font-style: italic;
+  color: ${schema.secondary};
+  font-weight: 500;
 `;
 
 const Text = styled.p`
   margin: 0.25vh 1vw 0 2vw;
-  font-weight: lighter;
 `;
 
 const SavedJobsCard = (props) => {
@@ -48,7 +49,6 @@ const SavedJobsCard = (props) => {
   const [show, setShow] = useState('false');
 
   const toggleModal = (event) => {
-    //event.preventDefault();
     setShow(!show);
   };
 
@@ -58,8 +58,10 @@ const SavedJobsCard = (props) => {
         <Title>{props.job ? title : null}</Title>
         <Text>{`$${salary.slice(0, salary.length - 3)},${salary.slice(salary.length - 3)}`}</Text>
       </SpacedRowDiv>
-      <Company>{`${company} (${city})`}</Company>
-      <Text>{`${employmentType.charAt(0).toUpperCase()}${employmentType.slice(1)} / ${experienceLevel.charAt(0).toUpperCase()}${experienceLevel.slice(1)}-level / ${workLocationType.charAt(0).toUpperCase()}${workLocationType.slice(1)}`}</Text>
+      <SpacedRowDiv>
+        <Company>{`${company} (${city})`}</Company>
+        <Text>{`${employmentType.charAt(0).toUpperCase()}${employmentType.slice(1)} / ${experienceLevel.charAt(0).toUpperCase()}${experienceLevel.slice(1)}-level / ${workLocationType.charAt(0).toUpperCase()}${workLocationType.slice(1)}`}</Text>
+      </SpacedRowDiv>
       <Text>{jobDescription}</Text>
       {!show
         ? (

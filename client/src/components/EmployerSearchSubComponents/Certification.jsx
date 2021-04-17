@@ -13,12 +13,6 @@ const RowDiv = styled.div`
   justify-content: left;
 `;
 
-// const SpacedRowDiv = styled.div`
-//   margin: 0 4vw;
-//   display: flex;
-//   justify-content: space-between;
-// `;
-
 const Text = styled.p`
   margin: 0;
 `;

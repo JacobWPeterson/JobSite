@@ -11,9 +11,47 @@ const SeekerPortalWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: ${schema.primary};
+
+  @media (min-width: 575px) {
+    background: whitesmoke;
+  }
 
   @media (min-width: 768px) {
     height: 94vh;
+  }
+`;
+
+const Corner = styled.div`
+  display: none;
+  z-index: 0;
+
+  @media (min-width: 1120px) {
+    display: inline;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    top: 60vh;
+    right: 0;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      border-radius: 50%;
+      bottom: 0;
+      right: 0;
+      box-shadow: 20vh 10vw 0 0 ${schema.secondary};
+    }
+  }
+
+  @media (min-width: 1325px) {
+    &:before {
+      box-shadow: 20vh 10vw 0 0 #CDDDDD;
+    }
   }
 `;
 
@@ -35,7 +73,6 @@ class SeekerPortal extends React.Component {
     this.postNote = this.postNote.bind(this);
   }
 
-  // Dummy data
   componentDidMount() {
     get('api/seekerdata/id', { params: { email: this.props.email } })
       .then((res) => {
@@ -66,7 +103,7 @@ class SeekerPortal extends React.Component {
       noteObj: note,
     };
 
-    // hook up to the notes component somewhere
+    // hook up to the notes component
     post('api/seekerdata/note', noteBody)
       .then(() => {
         get('api/seekerdata/note/all', { seekerId: this.state.seekerId })
@@ -105,6 +142,7 @@ class SeekerPortal extends React.Component {
           postNote={this.postNote}
         />
         )}
+        <Corner />
       </SeekerPortalWrapper>
     );
   }

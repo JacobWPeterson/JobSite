@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import schema from '../constants.jsx';
+
 const Select = styled.select`
+  height: 4vh;
+  width: max(10vw, 100px);
+  font: inherit;
+  margin: 1vh 0;
+  border: 2px solid ${schema.primary};
+  padding-left: .5vw;
 `;
 
 const Option = styled.option`

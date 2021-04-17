@@ -16,9 +16,7 @@ const PersonalContentWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: #FFF;
-  border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23);
   color: #424242;
 
   @media (min-width: 768px) {
@@ -28,7 +26,7 @@ const PersonalContentWrapper = styled.div`
 `;
 
 const TabsWrapper = styled.div`
-  width: 97%;
+  width: calc(97% + 2px);
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -47,6 +45,9 @@ const Tab = styled.div`
   align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  // border: 1px solid ${schema.secondary};
+  border: ${(props) => (props.selected ? '1px solid #e0e0e0' : '1px solid schema.secondary')};
+  border-bottom: none;
   ${schema.hoverEffect}
 
   @media (min-width: 768px) {
@@ -57,6 +58,7 @@ const Tab = styled.div`
 const ContentWrapper = styled.div`
   width: 97%;
   height: 92%;
+  z-index: 1;
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
@@ -64,6 +66,8 @@ const ContentWrapper = styled.div`
   overflow-y: scroll;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   ::-webkit-scrollbar {
