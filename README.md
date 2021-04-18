@@ -77,7 +77,7 @@ The job seeker dashboard contains a non-detailed view of their resume, with the 
 This dashboard allows a job seeker to look at all of the available jobs on the site and filter them based on various criteria. If they click 'SAVE' on a job posting it moves the application to their profile dashboard.
 
 ##### On a large display
-<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResults.png" width="750px"  alt="Jobs dashboard on desktop" />
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResultsDesktop.png" width="750px"  alt="Jobs dashboard on desktop" />
 
 ##### On a mobile device
 <img align="left" src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResultsMobile.png" width="200px"  alt="Jobs dashboard on mobile" />
