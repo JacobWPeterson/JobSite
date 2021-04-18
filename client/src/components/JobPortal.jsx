@@ -50,6 +50,8 @@ const JobResultsPortalWrapper = styled.div`
     height: 80vh;
   }
 `;
+
+const Corner = schema.corner;
 const ModalBackground = schema.modalBackground;
 
 class JobPortal extends React.Component {
@@ -76,7 +78,6 @@ class JobPortal extends React.Component {
   }
 
   componentDidMount() {
-    // send GET Request for data and assign to jobResults
     this.updateScreenSize();
     window.addEventListener('resize', this.updateScreenSize);
     this.getJobListings();
@@ -87,12 +88,6 @@ class JobPortal extends React.Component {
   }
 
   getJobListings() {
-    // const { filters:
-    //   { employment, experience, locationType, salary, datePosted, locationRange }
-    // } = this.state;
-
-    // const params = ``;
-
     get('api/listing/all')
       .then((data) => this.setState({ jobResults: data }))
       .catch((e) => console.log(e));
@@ -178,6 +173,7 @@ class JobPortal extends React.Component {
             </ModalBackground>
           )}
         </JobResultsPortalWrapper>
+        <Corner />
       </PageWrapper>
     );
   }

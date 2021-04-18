@@ -150,7 +150,7 @@ const ListingDetailModal = ({ jobToDisplay, seekerId }) => {
           </Section>
         </JobDetail>
         <Wrapper>
-          <Button onClick={toggleModal}>Save</Button>
+          <Button onClick={toggleModal}>SAVE</Button>
           {show
             ? (
               <ModalBackground onMouseDown={toggleModal}>

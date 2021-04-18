@@ -13,7 +13,6 @@ const JobDetailWrapper = styled.div`
   background: #FFF;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23);
   font-family: Arial, sans-serif;
   color: #424242;
 `;
@@ -28,6 +27,7 @@ const JobDisplay = styled.div`
   border: solid 1px #e0e0e0;
   border-radius: 10px;
   background: #ffffff;
+  z-index: 1;
 `;
 
 const JobDetail = styled.div`
@@ -133,7 +133,7 @@ const ListingDetailDiv = ({ seekerId, jobToDisplay }) => {
           </Section>
         </JobDetail>
         <Wrapper>
-          <Button onClick={toggleModal}>Save</Button>
+          <Button onClick={toggleModal}>SAVE</Button>
           {show
             ? (
               <ModalBackground onMouseDown={toggleModal}>

@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import JobResult from './JobResult.jsx';
-import schema from '../constants.jsx';
 
 const ResultsWrapper = styled.div`
-  width: 95%;
+  width: 95vw;
   height: 97%;
   background: #FFF;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23);
 
   @media (min-width: 768px) {
     width: 35%;

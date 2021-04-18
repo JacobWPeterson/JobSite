@@ -22,38 +22,7 @@ const SeekerPortalWrapper = styled.div`
   }
 `;
 
-const Corner = styled.div`
-  display: none;
-  z-index: 0;
-
-  @media (min-width: 1120px) {
-    display: inline;
-    width: 20vw;
-    height: 40vh;
-    overflow: hidden;
-    position: absolute;
-    top: 60vh;
-    right: 0;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 200%;
-      height: 200%;
-      position: absolute;
-      border-radius: 50%;
-      bottom: 0;
-      right: 0;
-      box-shadow: 20vh 10vw 0 0 ${schema.secondary};
-    }
-  }
-
-  @media (min-width: 1325px) {
-    &:before {
-      box-shadow: 20vh 10vw 0 0 #CDDDDD;
-    }
-  }
-`;
+const Corner = schema.corner;
 
 const NavButtonDiv = schema.navButtonDiv;
 const NavButton = schema.navButton;

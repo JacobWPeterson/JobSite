@@ -19,6 +19,39 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const corner = styled.div`
+  display: none;
+  z-index: 0;
+
+  @media (min-width: 1120px) {
+    display: inline;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    position: absolute;
+    top: 60vh;
+    right: 0;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      border-radius: 50%;
+      bottom: 0;
+      right: 0;
+      box-shadow: 20vh 10vw 0 0 #A599B5;
+    }
+  }
+
+  @media (min-width: 1325px) {
+    &:before {
+      box-shadow: 20vh 10vw 0 0 #CDDDDD;
+    }
+  }
+`;
+
 const modalBackdrop = `
   background-color: #02020280;
   backdrop-filter: blur(5px);
@@ -154,6 +187,7 @@ export default {
   slogan,
   url,
   listCard,
+  corner,
   modalBackdrop,
   modalBackground,
   hoverEffect,
