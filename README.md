@@ -23,11 +23,13 @@ This project was a brief 1-week sprint where our team tried to complete an MVP f
 1. React
 2. Node/Express
 3. Axios
-5. Styled-Components
-6. Jest
-7. Enzyme
-8. Mongoose
-9. JSON Web Tokens
+4. Styled-Components
+5. Jest
+6. Enzyme
+7. Mongoose
+8. JSON Web Tokens
+9. AWS (EC2)
+10. Docker
 
 ## Code Base
 This repo contains the front-end code for JobSite. You can find the remaining code at:
