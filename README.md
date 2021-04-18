@@ -78,8 +78,8 @@ This dashboard allows a job seeker to look at all of the available jobs on the s
 <img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResults.png" width="750px"  alt="Jobs dashboard on desktop" />
 
 ##### On a mobile device
-<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResultsMobile.png" width="200px"  alt="Jobs dashboard on mobile" />
-<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobPostingDetailMobile.png" width="200px"  alt="Job posting detail on mobile" />
+<img align="left" src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResultsMobile.png" width="200px"  alt="Jobs dashboard on mobile" />
+<img align="right" src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobPostingDetailMobile.png" width="200px"  alt="Job posting detail on mobile" />
 
 
 
