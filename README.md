@@ -59,7 +59,7 @@ This repo contains the front-end code for JobSite. You can find the remaining co
 ## Screengrabs
 
 ### Home/Login Page
-The user has the option to sign in as a job seeker or, using the toggle at the top right, an employer. If they do not have an account, they have the option to create one with 'Register'
+The user has the option to sign in as a job seeker or, using the toggle at the top right, an employer. If they do not have an account, they have the option to create one with 'Register.'
 <img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/Home.png" width="750px"  alt="User login landing page" />
 
 ### Job Seeker Dashboard
@@ -70,5 +70,17 @@ The job seeker dashboard contains a non-detailed view of their resume, with the 
 
 ##### On a mobile device
 <img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSeekerDashboardMobile.png" width="200px"  alt="Job seeker dashboard on mobile" />
+
+### Jobs Dashboard
+This dashboard allows a job seeker to look at all of the available jobs on the site and filter them based on various criteria. If they click 'SAVE' on a job posting it moves the application to their profile dashboard.
+
+##### On a large display
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResults.png" width="750px"  alt="Jobs dashboard on desktop" />
+
+##### On a mobile device
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobSearchResultsMobile.png" width="200px"  alt="Jobs dashboard on mobile" />
+<img src="https://github.com/JacobWPeterson/JobSite/blob/main/README_Images/JobPostingDetailMobile.png" width="200px"  alt="Job posting detail on mobile" />
+
+
 
 
